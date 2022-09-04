@@ -9,7 +9,7 @@ const char * wifiPassword = "sahg8h9a72high5";
 int status = WL_IDLE_STATUS;
 int incomingByte;
 
-String FirmwareVer = {"2.0"};
+String FirmwareVer = {"2.1"};
 
 #define URL_fw_Version "https://github.com/Dave-Olo/esp32_ota_test/blob/main/bin_version.txt"
 #define URL_fw_Bin "https://github.com/Dave-Olo/esp32_ota_test/blob/main/fw.bin"
@@ -146,7 +146,7 @@ int FirmwareVersionCheck(void) {
 void blink_(void){
   {
   digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(3000);                       // wait for a second
+  delay(1000);                       // wait for a second
   digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
   delay(1000);                       // wait for a second
 }
