@@ -11,8 +11,8 @@ int incomingByte;
 
 String FirmwareVer = {"2.1"};
 
-#define URL_fw_Version "https://github.com/Dave-Olo/esp32_ota_test/blob/main/bin_version.txt"
-#define URL_fw_Bin "https://github.com/Dave-Olo/esp32_ota_test/blob/main/fw.bin"
+#define URL_fw_Version "https://github.com/Dave-Olo/esp32_ota_test/main/bin_version.txt"
+#define URL_fw_Bin "https://github.com/Dave-Olo/esp32_ota_test/main/fw.bin"
 
 void setup() {
      pinMode(2, OUTPUT);
