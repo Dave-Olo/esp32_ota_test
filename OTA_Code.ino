@@ -4,15 +4,15 @@
 #include <WiFiClientSecure.h>
 #include "cert.h"
 
-const char * ssid = "Infinix NOTE 11";
-const char * wifiPassword = "sahg8h9a72high5";
+const char * ssid = "Prunedge";
+const char * wifiPassword = "Prun3dg3!@#";
 int status = WL_IDLE_STATUS;
 int incomingByte;
 
-String FirmwareVer = {"2.1"};
+String FirmwareVer = {"2.3"};
 
-#define URL_fw_Version "https://github.com/Dave-Olo/esp32_ota_test/main/bin_version.txt"
-#define URL_fw_Bin "https://github.com/Dave-Olo/esp32_ota_test/main/fw.bin"
+#define URL_fw_Version "https://github.com/Dave-Olo/esp32_ota_test/blob/main/bin_version.txt"
+#define URL_fw_Bin "https://github.com/Dave-Olo/esp32_ota_test/blob/main/fw.bin"
 
 void setup() {
      pinMode(2, OUTPUT);
@@ -38,7 +38,7 @@ void setup() {
 
 void loop() {
 
-    delay(1000);
+    delay(2000);
     Serial.print(" Active Firmware Version:");
     Serial.println(FirmwareVer);
 
@@ -146,9 +146,9 @@ int FirmwareVersionCheck(void) {
 void blink_(void){
   {
   digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
+  delay(3000);                       // wait for a second
   digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
+  delay(500);                       // wait for a second
 }
   
   }
